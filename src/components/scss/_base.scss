@@ -1,0 +1,22 @@
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    color: $fontColor;
+}
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input {
+    outline: none;
+}
+

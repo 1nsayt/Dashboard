@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.5%; 
+    &_bg {
+        @include gradient(to right, $purpleGrad);
+    } 
+    &-search {
+      width: 480px;
+      &__input {
+        width: 100%;
+      }
+    }
+    &-actions__link {
+      display: inline-block;
+    }
+    &-actions__badget_them{
+      color: red;
+    }
+
+ }

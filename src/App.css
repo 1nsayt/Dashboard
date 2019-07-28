@@ -1,6 +1,3 @@
-body {
-  font-family: "Open-sans", sans-serif;
-}
-.text-slanted {
-  font-family: "Courgette", cursive;
-}
+@import './components/css/style.css';
+
+
