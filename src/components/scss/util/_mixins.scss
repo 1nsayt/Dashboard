@@ -1,8 +1,11 @@
 @mixin gradient($direction, $list) { 
-    background: -webkit-linear-gradient($direction, $list);
-    background: -moz-linear-gradient($direction, $list);
-    background: -o-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);  
+  }
+
+@mixin gradientBadget($direction, $list) { 
+    background: linear-gradient($direction, $list);  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 @mixin font($name,$weight){
