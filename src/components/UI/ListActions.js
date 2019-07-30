@@ -3,12 +3,13 @@ import Action from './Action'
 
 export default class ListActions extends Component{
     render(){
-        const actions = this.props.actions;
+        const {actions,list} = this.props;
         return(
-            <ul className="header-actions">
+            <ul className={list}>
                 {actions.map(action=>
                     <Action key = {action.id}
-                            fontName = {action.fontName} />      
+                            fontName = {action.fontName}
+                            {...this.props} />      
                 )} 
             </ul>
         )

@@ -1,3 +1,5 @@
+@import 'styles/_share.scss';
+
 *,*:before,*:after {
     box-sizing: border-box;
 }
@@ -22,4 +24,6 @@ a {
 input {
     outline: none;
 }
+
+
 

@@ -1,0 +1,32 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import Header from './components/js/header/Header'
-
-
+import React, { Component } from 'react'
+import './App.scss'
+import Header from './components/header/Header'
 
 
 export default class App extends Component {
@@ -11,9 +10,9 @@ export default class App extends Component {
      nameApp: "Todo List",
      header: {
         actionsList: [
-          {id:1, fontName: "header-actions__badget fas fa-plus-circle" },
-          {id:2, fontName: "header-actions__badget fas fa-bell"},
-          {id:3, fontName: "header-actions__badget fas fa-cog"},
+          {id:1, fontName: " fas fa-plus-circle" },
+          {id:2, fontName: " fas fa-bell"},
+          {id:3, fontName: " fas fa-cog"},
         ]
       }
     }
