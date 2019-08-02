@@ -5,8 +5,7 @@ export default class FontAws extends Component {
     render(){
         const {fontName, color} = this.props;
         return(
-                <i className={ color? `${color} ${fontName}`: {fontName}} >
-                </i>
+                <i className = { color? `${color} ${fontName}`: fontName} > </i>
         )
     }
 }

@@ -4,17 +4,19 @@ $limeColor  : #59E800;
 $blueColor  : #006DFF;
 $orangeColor: #FF9300;
 $whiteColor : #fff;
- 
-// Gradient LIst
-$pinkGrad  : #D850CD, #FD7Fb6;
-$blueGrad  : #3B9DFF, #304FFE;
-$purpleGrad: rgb(36,40,89), rgba(64,55,111, 0.95);
-// $purpleGrad: #BD66DE, #5046CE;
+$darkblueColor: #1f2357;
+$pinkColor: #FF1493;
 
 // Alpha
 $alphaDark: 0.14;
 $alphaMed: 0.4;
 $alphaLight: 0.8;
+ 
+// Gradient LIst
+$pinkGrad  : #D850CD, #FD7Fb6;
+$blueGrad  : #3B9DFF, #304FFE;
+$purpleGrad: rgb(36,40,89), rgba(64,55,111, 0.3);
+// $purpleGrad: #BD66DE, #5046CE;
 
 // Fonts color
 $fontColor: #fff;
@@ -24,11 +26,10 @@ $mainFont     : "Montserrat";
 $secondaryFont: "Poppins";
 
 // Fonts weight
-$reg  : "regular";
-$med  : "medium";
-$sbol : "semi-bold";
-$light: "light";
-
+$light: 300;
+$reg  : 400;
+$med  : 500;
+$sbol : 600;
 // Fonts size
 
 

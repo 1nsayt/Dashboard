@@ -1,30 +1,44 @@
 import React, { Component } from 'react'
 import ListActions from '../UI/ListActions'
 import FontAws from '../UI/FontAws'
+import Container from '../UI/Container'
+import Background from '../UI/Background' 
 import clasess from './_header.module.scss'
 
 
 export default class Header extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            nameApp: "Todo List",
+            actionsList: [
+                {id:1, fontName: " fas fa-plus-circle" },
+                {id:2, fontName: " fas fa-bell"},
+                {id:3, fontName: " fas fa-cog"},
+            ]
+           }
+    }
     render(){
-        const { nameApp, actions } = this.props;
+        const { nameApp, actionsList } = this.state;
         return(
-            <div className={clasess.bg}>
-                <div className="container">
+            <Background className={clasess.bg}>
+                <Container>
                     <div className={clasess.header}>
                         <div className={clasess.title}>
-                            <FontAws fontName = {`${clasess.titleIcon} far fa-circle`}/>
+                            <FontAws fontName = "far fa-circle"
+                                     color = {clasess.titleIcon} />
                             <span className="title-nameApp">{nameApp}</span>
                         </div>
                         <div className={clasess.search}>
                             <FontAws fontName = {` ${clasess.searchIcon}  fas  fa-search `} />
                             <input className={clasess.searchInput} placeholder="Quick find..."/>
                         </div>
-                        <ListActions actions = {actions}
+                        <ListActions actions = {actionsList}
                                      item = {clasess.actionsItem}
                                      color = {clasess.actionsColor} />
                     </div>
-                </div>
-            </div>
+                </Container>
+            </Background>
         )
     }
 }

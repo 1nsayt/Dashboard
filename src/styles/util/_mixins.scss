@@ -8,7 +8,10 @@
     -webkit-text-fill-color: transparent;
   }
 
-@mixin font($name,$weight){
-    font-family: $name, sans-serif;
-    font-weight: $weight;
+@mixin font($name,$weight:null){
+    @if $weight != null {font-family: $name, sans-serif;
+                         font-weight: $weight;}
+    @else {
+      font-family: $name, sans-serif;
+    }
   }

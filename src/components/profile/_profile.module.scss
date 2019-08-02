@@ -1,0 +1,120 @@
+ @import 'src/styles/_share.scss';
+
+.bg {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 360px;
+   height: 100%;
+   @include gradient(to right, $purpleGrad);  
+   box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+   z-index: -5;
+ }
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 160px;
+}
+
+ .user{
+   display: flex;
+   justify-content: space-between;
+   &Pic{
+     position: relative;
+   }
+ }
+
+.userPic {
+  img{
+    position: relative;
+    width: 55px;
+    height: 50px;
+    border-radius: 21px 19px 26px 0px;
+    clip-path: circle(81.5% at 33% 66%);
+  }
+  i{
+    position: absolute;
+    font-size: 10px;
+    right: 3px;
+    color: $limeColor;
+  }
+}
+
+.userName {
+  @include font($mainFont);
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 5px;
+  :first-child {
+    font-weight: $sbol;
+    margin-bottom: 10px;
+  :last-child {
+    font-weight: $reg;
+  }
+  }
+
+}
+
+.widgets {
+  li {
+    margin-bottom: 10px
+  }
+  span {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  i {
+  font-size: 10px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;}
+  :nth-child(1) i {
+    background: $blueColor;
+  }
+  :nth-child(2) i {
+    background: $pinkColor;
+  }
+  :nth-child(3) {
+    margin-bottom: 0;
+    i {
+    background: $mainColor;
+  }
+}
+}
+
+.overview {
+  li{
+    margin-bottom: 10px;
+    a:last-child {
+      position: absolute;
+      right: 0;
+    }
+  }
+  span{
+    display: inline-block;
+    @include font($mainFont,$sbol);
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+  :nth-child(1) i{
+    color: $mainColor;
+  }
+  :nth-child(2) i{
+    color: $blueColor;
+  }
+  :nth-child(3) i{
+    color: $pinkColor;
+  }
+}
+
+
+
+
+
+
+
