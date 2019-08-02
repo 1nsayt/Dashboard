@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
-import ListActions from '../UI/ListActions'
-import User from '../UI/User'
+import ListActions from '../../UI/ListActions'
+import User from '../../UI/User'
 import Overview from './Overview'
 import classes from './_profile.module.scss'
-import Container from '../UI/Container'
-import g1 from '../../img/1.jpg'
-import g2 from '../../img/2.jpg'
-import g3 from '../../img/3.jpg'
-import Background from '../UI/Background';
+import g1 from '../../../img/1.jpg'
+import g2 from '../../../img/2.jpg'
+import g3 from '../../../img/3.jpg'
+// import Background from '../../UI/Background';
 
 
 export default class Profile extends Component {
@@ -52,21 +51,15 @@ export default class Profile extends Component {
     render(){
         const {users,actionsList,additionsList} = this.state;
         return( 
-            <>  
-                <Background className = {classes.bg}>
-                </Background>
-                <Container>
-                    <div className = {classes.wrapper}>
-                            <User  user = {users[0]} 
-                                className = {classes} 
-                                fontName = "fas fa-circle" />
-                            <ListActions  actions = {actionsList}
-                                        list = {classes.widgets} />
-                            <Overview additions = {additionsList}
-                                    list = {classes.overview} /> 
-                    </div>
-                </Container>
-            </>
+            <div className = {classes.wrapper}>
+                    <User user = {users[0]} 
+                            className = {classes} 
+                            fontName = "fas fa-circle" />
+                    <ListActions actions = {actionsList}
+                                    list = {classes.widgets} />
+                    <Overview additions = {additionsList}
+                                list = {classes.overview} /> 
+            </div>
         )
     }
 

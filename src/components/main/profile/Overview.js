@@ -1,5 +1,5 @@
 import React , {Component} from 'react'
-import FontAws from '../UI/FontAws'
+import FontAws from '../../UI/FontAws'
 
 export default class Overview extends Component{
    

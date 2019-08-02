@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.scss'
 import Header from './components/header/Header'
-import Profile from './components/profile/Profile'
+import Main from './components/main/Main'
 
 
 
@@ -10,7 +10,7 @@ export default class App extends Component {
     return (
         <div>
             <Header /> 
-            <Profile />
+            <Main />
         </div>
     )}
 }

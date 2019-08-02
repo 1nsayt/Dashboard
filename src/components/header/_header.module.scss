@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9.5%;
   }
 .titleIcon {
   @include gradientBadget(to bottom right, $pinkGrad);
