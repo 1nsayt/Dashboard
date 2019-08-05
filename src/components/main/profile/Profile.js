@@ -6,6 +6,7 @@ import classes from './_profile.module.scss'
 import g1 from '../../../img/1.jpg'
 import g2 from '../../../img/2.jpg'
 import g3 from '../../../img/3.jpg'
+
 // import Background from '../../UI/Background';
 
 
